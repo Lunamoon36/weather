@@ -12,11 +12,7 @@ body {
   background-size: 400%;
   font-family: "Poppins", sans-serif;
 }
-h1 {
-  font-family: "Caveat", cursive;
-  font-size: 60px;
-  margin: 0;
-}
+
 .weather-app {
   background: white;
   max-width: 600px;
@@ -24,4 +20,113 @@ h1 {
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
+}
+header {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c1facb;
+}
+.search-form-input {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248) 0%,
+    rgb(168, 222, 248) 21.8%,
+    rgb(189, 250, 205) 35.6%,
+    rgb(243, 250, 189) 52.9%,
+    rgb(250, 227, 189) 66.8%,
+    rgb(248, 172, 172) 90%,
+    rgb(254, 211, 252) 99.7%
+  );
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.search-form-button {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248) 0%,
+    rgb(168, 222, 248) 21.8%,
+    rgb(189, 250, 205) 35.6%,
+    rgb(243, 250, 189) 52.9%,
+    rgb(250, 227, 189) 66.8%,
+    rgb(248, 172, 172) 90%,
+    rgb(254, 211, 252) 99.7%
+  );
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: #8a2be2;
+  font-size: 16px;
+  margin-left: 5px;
+}
+main {
+  padding: 30px 0;
+}
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  margin: 0;
+  line-height: 48px;
+}
+.weather-app-details {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.weather-app-details strong {
+  color: #f76591;
+}
+.weather-app-temperature-container {
+  display: flex;
+}
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 30px;
+}
+.weather-app-temperature {
+  font-size: 88px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.weather-app-unit {
+  margin-top: 25px;
+  font-size: 28px;
+}
+footer {
+  padding: 40px 0 0 0;
+  border-top: 1px solid #fdcae9;
+  text-align: center;
+  font-size: 14px;
+  color: #a28cf7;
+}
+.myProfileLink,
+.myGitHubLink,
+.myNetlifyLink {
+  text-decoration: none;
+}
+
+.myProfileLink {
+  color: #f9b4af;
+}
+.myGitHubLink {
+  color: #b0e8e9;
+}
+.myNetlifyLink {
+  color: #dbaaf8;
+}
+.myProfileLink:hover {
+  text-decoration: underline;
+}
+.myGitHubLink:hover {
+  text-decoration: underline;
+}
+.myNetlifyLink:hover {
+  text-decoration: underline;
 }
