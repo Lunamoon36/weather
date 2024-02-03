@@ -87,6 +87,9 @@ main {
 .weather-app-details strong {
   color: #f76591;
 }
+.description {
+  opacity: 0.6;
+}
 .weather-app-temperature-container {
   display: flex;
 }
