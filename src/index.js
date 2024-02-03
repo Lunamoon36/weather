@@ -18,6 +18,7 @@ function refreshWeather(response) {
   iconElement.innerHTML = `
   <img
       src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -51,7 +52,15 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
-function displayForecast() {
+
+function getForecast(city) {
+  let apiKey = "773b1fb672t5o4902c27a62f4db0b82a";
+  apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Tues", "Weds", "Thurs", "Fri", "Sat"];
   let forecastHtml = "";
   days.forEach(function (day) {
@@ -78,4 +87,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Nottingham");
-displayForecast();
